@@ -16,7 +16,7 @@ public class homework22_7 {
                 map.put(tmp,1);
             }else{
                 int value = map.get(tmp);
-                System.out.print(value);
+                System.out.println(value);
                 value++;
                 map.put(tmp,value);
             }
@@ -25,10 +25,6 @@ public class homework22_7 {
 
         Set<Map.Entry<Integer, Integer>> entry1=sort.entrySet();
         Iterator<Map.Entry<Integer, Integer>> it=entry1.iterator();
-        while(it.hasNext())
-        {
-            Map.Entry<Integer, Integer> entry=it.next();
-            System.out.println("排序之后:"+entry.getKey()+" 值"+entry.getValue());
-        }
+
     }
 }

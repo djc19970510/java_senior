@@ -4,8 +4,7 @@ public abstract class MyAbstractList<E> implements MyList<E> {
   protected int size = 0; // The size of the list
 
   /** Create a default list */
-  protected MyAbstractList() {
-  }
+  protected MyAbstractList() {}
 
   /** Create a list from an array of objects */
   protected MyAbstractList(E[] objects) {

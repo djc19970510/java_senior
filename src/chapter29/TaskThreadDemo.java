@@ -37,7 +37,7 @@ class PrintChar implements Runnable {
    */
   public void run() {
     for (int i = 0; i < times; i++) {
-      System.out.print(charToPrint);
+      System.out.println(charToPrint);
     }
   }
 }
@@ -54,7 +54,8 @@ class PrintNum implements Runnable {
   /** Tell the thread how to run */
   public void run() {
     for (int i = 1; i <= lastNum; i++) {
-      System.out.print(" " + i);
+      System.out.println(" " + i);
+      Thread.yield();
     }
   }
 }
